@@ -109,7 +109,6 @@ namespace WeatherClient
                 switch (timeInterval)
                 {
                     case "5":
-                        //Console.WriteLine($"Executing at {seconds} second intervals");
                         return true;
                     case "10":
                         return true;
