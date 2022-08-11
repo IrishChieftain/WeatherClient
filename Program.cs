@@ -14,6 +14,7 @@ namespace WeatherClient
         /// <summary>
         /// Some improvements could be made to project structure such as adding model folder, etc,
         /// also some more stringent error handling and logging and possible use of options pattern.
+        /// Would also benefit from unit and integration tests.
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
