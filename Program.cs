@@ -65,7 +65,7 @@ namespace WeatherClient
                         };
 
                         // Write report to log
-                        WriteLog(directoryPath, weatherRecordDTO, i);
+                        WriteLog(directoryPath, weatherRecordDTO);
 
                         i++;
                         break;
@@ -74,7 +74,7 @@ namespace WeatherClient
             }
         }
 
-        private static void WriteLog(string docPath, WeatherRecordDTO weatherRecordDTO, int i)
+        private static void WriteLog(string docPath, WeatherRecordDTO weatherRecordDTO)
         {
             string path = Path.Combine(docPath, "OpenWeatherData" + "_" + weatherRecordDTO.TimeStamp.ToString("MMddyyyy" + "_" + "HH_mm_ss") + ".txt");
             using (StreamWriter sw = File.AppendText(path))
