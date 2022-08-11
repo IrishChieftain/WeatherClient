@@ -50,7 +50,7 @@ namespace WeatherClient
                 {
                     while (await timer.WaitForNextTickAsync())
                     {
-                        Console.WriteLine($"Making REST request #{i}");
+                        Console.WriteLine($"Making REST request #{i + 1}");
                         weatherReport = await ProcessReports<WeatherReport>();
                         DateTime dt = UnixDateToDateTime(weatherReport.dt);
 
